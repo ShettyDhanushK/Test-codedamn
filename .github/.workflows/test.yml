@@ -1,0 +1,7 @@
+name : My first git hub actions. #the name of your action
+on : [push] #When your action should be tested. Like pull_request or deployment_status. The most common one is at push.
+jobs :  #Work to be done by the action.
+    print-hello-world :
+        runs-on : ubuntu-latest
+        steps :  #Specifying the steps to do the job
+            - run: echo "Hello world" #it is a bash command
